@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+      <head>
+            <title>student signup form</title>
+            <link rel="stylesheet" href="signup.css"></link >
+      <style>
+            input[type=text]
+             {
+                 width:200px;
+                 height:50px;
+                 padding:5px 50px;
+                 margin:15px 0;
+                /* dispay:inline-block;*/
+                 border:1px solid blue;
+                /* box-sizing:border-box;*/
+             }
+             input[type=password]
+             {
+                  width:200px;
+                 height:50px;
+                 padding:3px 50px;
+                 margin:15px 0;
+                /* dispay:inline-block;*/
+                 border:1px solid blue;
+                /* box-sizing:border-box;*/
+              }
+             button {
+                   background-color:transparent;
+                   color:white;
+                   cursor:pointer;
+                   width:100px;
+                   margin:8px 0;
+                     }
+              
+               .cancelbtn,.submitbtn {
+                     float:center;
+                     width:20%;
+                     padding:14px 20px;
+
+                     }
+                body {
+                         background-image: url("bimage1.jpg");
+                 
+                  }
+                
+      </style>
+      </head>
+      <body>
+           <h2><center>Student signup form</center</h2>
+           <form action="/action_page.php">
+         
+         <div align="center">
+                
+               <label><b>   name :</b></label>
+               <input type="text" placeholder="name" name="name"  max="5" required ></input>
+          
+          
+          <div>
+               <label><b>email id  :</b></label>
+               <input type="text" placeholder="email id" name="email" required></input>
+          </div>
+          <div> 
+               <label><b>password  :</b></label>
+               <input type="password" placeholder="password" name="pwd"  inputmode="numaric" pattern=".{6,}" required title="6charater minimum"></input>
+           </div>
+           </form>
+           
+           <div >
+                <button type="button" class="submitbtn">submit</button>
+                <button type="button" class="cancelbtn">cancel</button>
+            </div>
+          
+      </body>
+</html>
